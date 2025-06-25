@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sushi/feature/home/home_screen.dart';
 import 'package:sushi/feature/splash/splash_screen.dart';
 import 'package:sushi/routing/routes.dart';
 
@@ -11,6 +12,9 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => SplashView());
       case Routes.onBoardingRoute:
         return MaterialPageRoute(builder: (_) => OnBoardingView());
+      case Routes.homeScreen:
+        return MaterialPageRoute(builder: (_) => HomeScreen());
+
       // case Routes.loginRoute:
       //   return MaterialPageRoute(builder: (_) => LoginScreen());
       default:

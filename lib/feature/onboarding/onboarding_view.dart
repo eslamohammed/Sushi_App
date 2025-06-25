@@ -165,7 +165,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                   data.currentIndex == data.pageCount - 1
                       ? Navigator.of(
                         context,
-                      ).pushReplacementNamed(Routes.loginRoute)
+                      ).pushReplacementNamed(Routes.homeScreen)
                       : pageController.nextPage(
                         duration: const Duration(
                           milliseconds: AppConstants.sliderAnimationTime,
