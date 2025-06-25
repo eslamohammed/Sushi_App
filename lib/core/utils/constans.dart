@@ -15,13 +15,14 @@ class AppStrings {
   static const onBoardingHeader1 =
       "Experience traditional flavors with a modern twist";
   static const onBoardingBody1 =
-      "Experience hand-rolled sushi made with fresh ingredients, crafted by expert chefs. Taste tradition in every bite.";
-  static const onBoardingHeader2 = "Connect with Top Doctors";
+      "🥢: Experience hand-rolled sushi made with fresh ingredients, crafted by expert chefs. Taste tradition in every bite.";
+  static const onBoardingHeader2 = "Explore our menu";
   static const onBoardingBody2 =
-      "Browse doctor profiles, read reviews, and chat with them directly through the app.";
-  static const onBoardingHeader3 = "Keep Track of Your Appointments";
+      "🍤: Discover hand-crafted dishes, detailed with ingredients, prices, and mouthwatering photos.";
+  static const onBoardingHeader3 =
+      "Add to cart, choose payment, and enjoy fast delivery or pickup at your convenience.";
   static const onBoardingBody3 =
-      "Get reminders and all the details so you never miss your medical appointments.";
+      "🍣: Browse the menu, explore fresh deals, and order your next delicious bite — all in a few taps.";
 
   static const login = "Login";
   static const skip = "Skip";

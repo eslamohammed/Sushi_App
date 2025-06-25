@@ -16,6 +16,7 @@ TextStyle get headline2 => const TextStyle(
   decoration: TextDecoration.none,
   fontStyle: FontStyle.normal,
   fontWeight: FontWeight.w700,
+  fontFamily: AppConstants.zenkaku,
   height: 25.99 / 20,
   letterSpacing: 1.2,
 );

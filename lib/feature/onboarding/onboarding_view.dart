@@ -5,6 +5,7 @@ import 'package:sushi/feature/onboarding/onboarding_slider.dart';
 import 'package:sushi/feature/onboarding/onboarding_view_model.dart';
 import 'package:sushi/routing/routes.dart';
 
+import '../../core/utils/assets_manger.dart';
 import '../../core/utils/style_manager.dart';
 import '../../core/utils/values_manager.dart';
 
@@ -85,7 +86,10 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           _viewModel.onPageChanged(index);
         },
         itemBuilder: (context, index) {
-          return OnboardingPage(onboardingSlider: data.onboardingSlider);
+          return OnboardingPage(
+            onboardingSlider: data.onboardingSlider,
+            data: data,
+          );
         },
       ),
       bottomSheet: Container(
@@ -198,8 +202,12 @@ class _OnBoardingViewState extends State<OnBoardingView> {
 
 class OnboardingPage extends StatelessWidget {
   final OnboardingSlider onboardingSlider;
-
-  const OnboardingPage({super.key, required this.onboardingSlider});
+  final OnboardingSliderViewObject data;
+  const OnboardingPage({
+    super.key,
+    required this.onboardingSlider,
+    required this.data,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -237,15 +245,73 @@ class OnboardingPage extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(AppPadding.p16),
+          padding: const EdgeInsets.only(
+            // top: AppPadding.p16,
+            left: AppPadding.p16,
+            right: AppPadding.p16,
+          ),
           child: Text(
             onboardingSlider.body,
             style: bodyText1.copyWith(color: ColorManager.grey),
-            textAlign: TextAlign.center,
+            textAlign:
+                data.currentIndex == 1 ? TextAlign.start : TextAlign.center,
           ),
+        ),
+        SizedBox(
+          width: double.infinity,
+          height: 225,
+          child: (data.currentIndex == 1) ? _imgProjector() : Container(),
         ),
         const SizedBox(height: AppSize.s40),
       ],
+    );
+  }
+
+  Widget _imgProjector() {
+    List imageAssets = [
+      AssetsManager.onBoardingFrame0,
+      AssetsManager.onBoardingFrame1,
+      AssetsManager.onBoardingFrame2,
+      AssetsManager.onBoardingFrame3,
+    ];
+    return Padding(
+      padding: const EdgeInsets.only(
+        // top: AppPadding.p16,
+        left: AppPadding.p16,
+        right: AppPadding.p16,
+      ),
+      child: GridView.builder(
+        itemCount: imageAssets.length,
+        physics: NeverScrollableScrollPhysics(), // Disables scrolling
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisSpacing: 12.0,
+          crossAxisSpacing: 12.0,
+          childAspectRatio: 173 / 74,
+        ),
+        itemBuilder: (BuildContext context, int index) {
+          return GestureDetector(
+            onTap: () {
+              print("hi index : $index");
+              // do something when the image is tapped
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey[300],
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Center(
+                child: Image.asset(
+                  imageAssets[index],
+                  fit: BoxFit.contain,
+                  width: double.infinity,
+                  height: double.infinity,
+                ),
+              ),
+            ),
+          );
+        },
+      ),
     );
   }
 }
