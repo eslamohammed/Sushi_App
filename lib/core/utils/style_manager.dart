@@ -10,7 +10,24 @@ TextStyle get headline1 => const TextStyle(
   height: 38.99 / 30,
   letterSpacing: 0.2,
 );
-
+TextStyle get headlineNew1 => const TextStyle(
+  fontSize: 22,
+  decoration: TextDecoration.none,
+  fontStyle: FontStyle.normal,
+  fontWeight: FontWeight.w700,
+  fontFamily: AppConstants.zenkaku,
+  height: 28 / 30,
+  letterSpacing: 0.2,
+);
+TextStyle get headlineNew3 => const TextStyle(
+  fontSize: 16,
+  decoration: TextDecoration.none,
+  fontStyle: FontStyle.normal,
+  fontWeight: FontWeight.w500,
+  fontFamily: AppConstants.zenkaku,
+  // height: 24,
+  letterSpacing: 0.2,
+);
 TextStyle get headline2 => const TextStyle(
   fontSize: 20,
   decoration: TextDecoration.none,
