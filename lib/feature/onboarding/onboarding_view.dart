@@ -106,29 +106,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     return Container(
       decoration: BoxDecoration(color: ColorManager.primaryBg),
       child: Column(
-        // crossAxisAlignment: CrossAxisAlignment.,
-        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // Padding(
-          //   padding: const EdgeInsets.symmetric(
-          //       vertical: AppPadding.p16, horizontal: AppPadding.p20),
-          //   child: GestureDetector(
-          //     onTap: () {
-          //       pageController.previousPage(
-          //           duration: const Duration(
-          //               milliseconds: AppConstants.sliderAnimationTime),
-          //           curve: Curves.ease);
-          //     },
-          //     child: SizedBox(
-          //       width: AppSize.s20,
-          //       height: AppSize.s20,
-          //       child: SvgPicture.asset(
-          //         color: ColorManager.secondary,
-          //         AssetsManager.leftArrow,
-          //       ),
-          //     ),
-          //   ),
-          // ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -163,9 +141,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               child: ElevatedButton(
                 onPressed: () {
                   data.currentIndex == data.pageCount - 1
-                      ? Navigator.of(
-                        context,
-                      ).pushReplacementNamed(Routes.homeScreen)
+                      ? Navigator.of(context).pushReplacementNamed(Routes.home)
                       : pageController.nextPage(
                         duration: const Duration(
                           milliseconds: AppConstants.sliderAnimationTime,
