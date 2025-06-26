@@ -28,6 +28,15 @@ TextStyle get headlineNew3 => const TextStyle(
   // height: 24,
   letterSpacing: 0.2,
 );
+TextStyle get hintline => const TextStyle(
+  fontSize: 18,
+  decoration: TextDecoration.none,
+  fontStyle: FontStyle.normal,
+  fontWeight: FontWeight.w500,
+  fontFamily: AppConstants.zenkaku,
+  // height: 24,
+  letterSpacing: 0.2,
+);
 TextStyle get headline2 => const TextStyle(
   fontSize: 20,
   decoration: TextDecoration.none,
