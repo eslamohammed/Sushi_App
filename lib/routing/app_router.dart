@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sushi/feature/details/sushi_details_view.dart';
 import 'package:sushi/feature/home/home.dart';
 import 'package:sushi/feature/splash/splash_screen.dart';
 import 'package:sushi/routing/routes.dart';
@@ -21,6 +22,9 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => LoginPage());
       case Routes.registerRoute:
         return MaterialPageRoute(builder: (_) => SignUpPage());
+
+      // case Routes.detailsRoute:
+      //   return MaterialPageRoute(builder: (_) => SushiDetailsView());
       default:
         return MaterialPageRoute(
           builder:

@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/utils/style_manager.dart';
-import '../../../core/utils/values_manager.dart';
-
 class GridCardItem {
   final String title;
   final String imageAssetPath;

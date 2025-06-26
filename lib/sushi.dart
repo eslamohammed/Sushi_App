@@ -20,7 +20,7 @@ class SushiApp extends StatelessWidget {
         title: AppConstants.appName,
         theme: ThemeData(
           useMaterial3: true,
-          colorSchemeSeed: ColorManager.primary,
+          colorSchemeSeed: ColorManager.primaryBg,
           scaffoldBackgroundColor: ColorManager.primaryBg,
         ),
         onGenerateRoute: AppRouter.generateRoute,

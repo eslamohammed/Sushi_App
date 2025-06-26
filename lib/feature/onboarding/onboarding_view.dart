@@ -207,7 +207,6 @@ class OnboardingPage extends StatelessWidget {
             ),
           ),
         ),
-        // Image.asset(onboardingSlider.imagePath, fit: BoxFit.fill),
         const SizedBox(height: AppSize.s30),
         Padding(
           padding: const EdgeInsets.only(

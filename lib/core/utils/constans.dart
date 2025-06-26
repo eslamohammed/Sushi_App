@@ -2,7 +2,7 @@ class AppConstants {
   static const String baseUrl = 'https://tabibna-api.onrender.com/api/v1/';
   // static const String appName = "👨‍⚕️🩺  Tabibna";
   static const String appName = " 🥢  Sushi FA";
-  static const int splashDelay = 4200;
+  static const int splashDelay = 4000;
   static const int sliderAnimationTime = 300;
   static const String zenkaku = "Zen_Kaku_Gothic_New";
   static const String mPlusRounded = "M_PLUS_Rounded_1c";
