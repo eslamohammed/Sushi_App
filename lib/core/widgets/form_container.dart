@@ -43,11 +43,12 @@ class _FormContainerWidgetState extends State<FormContainerWidget> {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      cursorColor: ColorManager.grey,
       decoration: InputDecoration(
         labelText: widget.labelText,
         labelStyle: hintline.copyWith(color: ColorManager.grey),
         hintText: widget.hintText,
-        hintStyle: hintline,
+        hintStyle: hintline.copyWith(color: ColorManager.white),
         prefixIcon:
             widget.isPasswordField == true
                 ? Icon(Icons.lock, color: Colors.grey)
@@ -83,7 +84,7 @@ class _FormContainerWidgetState extends State<FormContainerWidget> {
           borderRadius: BorderRadius.circular(10.0),
         ),
       ),
-      style: Theme.of(context).inputDecorationTheme.hintStyle,
+      style: hintline.copyWith(color: ColorManager.lightGrey, fontSize: 20),
       controller: widget.controller,
       keyboardType: widget.inputType,
       key: widget.fieldKey,
