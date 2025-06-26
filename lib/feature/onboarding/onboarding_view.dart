@@ -141,7 +141,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               child: ElevatedButton(
                 onPressed: () {
                   data.currentIndex == data.pageCount - 1
-                      ? Navigator.of(context).pushReplacementNamed(Routes.home)
+                      ? Navigator.of(
+                        context,
+                      ).pushReplacementNamed(Routes.loginRoute)
                       : pageController.nextPage(
                         duration: const Duration(
                           milliseconds: AppConstants.sliderAnimationTime,
