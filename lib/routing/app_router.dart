@@ -3,7 +3,9 @@ import 'package:sushi/feature/home/home.dart';
 import 'package:sushi/feature/splash/splash_screen.dart';
 import 'package:sushi/routing/routes.dart';
 
+import '../feature/login/login_view.dart';
 import '../feature/onboarding/onboarding_view.dart';
+import '../feature/register/register_view.dart';
 
 class AppRouter {
   static Route generateRoute(RouteSettings settings) {
@@ -15,8 +17,10 @@ class AppRouter {
       case Routes.home:
         return MaterialPageRoute(builder: (_) => Home());
 
-      // case Routes.loginRoute:
-      //   return MaterialPageRoute(builder: (_) => LoginScreen());
+      case Routes.loginRoute:
+        return MaterialPageRoute(builder: (_) => LoginPage());
+      case Routes.registerRoute:
+        return MaterialPageRoute(builder: (_) => SignUpPage());
       default:
         return MaterialPageRoute(
           builder:
