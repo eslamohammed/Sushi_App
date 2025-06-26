@@ -14,6 +14,7 @@ class AssetsManager {
   static const String onBoardingFrame3 = "${path}Frame3.png";
   static const String homeScreen = "${path}homeScreen.png";
   static const String homeScreen3x = "${path}homeScreen3x.png";
+  static const String profilePhoto = "${path}profile_photo.png";
 
   static const String featured1 = "${path}featured1.png";
   static const String featured2 = "${path}featured2.png";
@@ -23,4 +24,11 @@ class AssetsManager {
   static const String grid2 = "${path}grid2.png";
   static const String grid3 = "${path}grid3.png";
   static const String grid4 = "${path}grid4.png";
+
+  static const String editProfile = "${path}editprofile.svg";
+  static const String contactUs = "${path}cu.svg";
+  static const String orderHistory = "${path}oh.svg";
+  static const String savedAddresses = "${path}sa.svg";
+  static const String paymentMethods = "${path}pm.svg";
+  static const String changePassword = "${path}cp.svg";
 }

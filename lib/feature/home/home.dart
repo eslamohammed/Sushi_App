@@ -4,6 +4,7 @@ import 'package:sushi/feature/home/home_screen.dart';
 import 'package:sushi/feature/home/widget/custom_appBar.dart';
 
 import '../../core/utils/style_manager.dart';
+import '../profile/profile_view.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -70,12 +71,7 @@ class _HomeScreenState extends State<Home> {
           style: headlineNew3.copyWith(color: Colors.white, fontSize: 30),
         ),
       ),
-      Center(
-        child: Text(
-          'Profile Page',
-          style: headlineNew3.copyWith(color: Colors.white, fontSize: 30),
-        ),
-      ),
+      ProfilePage(),
     ];
   }
 
