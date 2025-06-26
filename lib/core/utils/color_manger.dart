@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ColorManager {
   static Color primary = const Color(0xFFCF0F0F); // Muted orange 0xFF115A60
-  static Color secondary = const Color(0xFF0F655A); // Orange Dark
+  // static Color secondary = const Color(0xFF0F655A); // Orange Dark
   static Color primaryBg = const Color(0xFF171212);
   static Color secondaryBg = const Color(0xFF1F1F1F);
   static Color black = Colors.black;
@@ -17,11 +17,11 @@ class ColorManager {
   static Color white = const Color(0xffFFFFFF);
 
   static const Color lightPrimary = Color(0xffa1a3f6);
-  static const Color turquoise = Color(0xff58c6cd);
+  // static const Color turquoise = Color(0xff58c6cd);
   static const Color water = Color(0xff99d7db);
   static const Color peach = Color(0xffeec1c1);
   static const Color sunnyYellow = Color(0xfff2d382);
-  static const Color babyBlue = Color(0xffa6d0ee);
+  // static const Color babyBlue = Color(0xffa6d0ee);
   static const Color lightGrey = Color(0xffe5e6ee);
   static const Color dustGrey = Color(0xffb0b2c3);
   static const Color darkGrey = Color(0xff898d9e);
